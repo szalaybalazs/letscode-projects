@@ -44,6 +44,9 @@
 			tr:nth-of-type(1){
 				font-size: 22px;
 			}
+			tr:not(:nth-of-type(1)):hover{
+				background-color: rgba(0,0,0,.05)
+			}
 			tr:nth-child(-n+4):not(:nth-of-type(1)){
 				font-variant: small-caps;
 			}
@@ -71,7 +74,7 @@
 					<option value="6" disabled>Kenguru</option>
 				</select>
 			</div>
-			<table id="runners"></table>
+			<table id="runners" cellspacing="0"></table>
 		</div>
 		<script type="text/javascript" src="runners.json"></script>
 		<script type="text/javascript" src="./index.js"></script>
