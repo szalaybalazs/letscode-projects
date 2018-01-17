@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Fuss a csúcsra eredmények - 2013</title>
+		<link rel="stylesheet" href="./main.css">
+		
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="final">
+			<div class="options">
+				<select id="category" onchange="optionchange()">
+					<option value="0">Nő - 14 alatt</option>
+					<option value="1">Nő - 14-18</option>
+					<option value="2">Nő - 18 felett</option>
+					<option value="3">Férfi - 14 alatt</option>
+					<option value="4">Férfi - 14-18</option>
+					<option value="5">Férfi - 18 felett</option>
+				</select>
+			</div>
+			<table id="runners"></table>
+		</div>
+		<script type="text/javascript" src="runners.json"></script>
+		<script type="text/javascript" src="./index.js"></script>
+	</body>
+</html>
