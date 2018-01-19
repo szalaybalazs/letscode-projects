@@ -12,7 +12,13 @@ const filters = "<input type='text' placeholder='Megálló keresése... (Enter)'
 //a keresési lista html elemenseit tartalmazó változó
 let list = ""
 
-
+let link
+if(window.location.href.split("//")[0] === "https:"){
+	console.info("using https")
+	link = "https://cors-anywhere.herokuapp.com/http://futar.bkk.hu/bkk-utvonaltervezo-api/ws/otp/api/where/arrivals-and-departures-for-stop.json?stopId=BKK_"
+}else{
+	link = "http://futar.bkk.hu/bkk-utvonaltervezo-api/ws/otp/api/where/arrivals-and-departures-for-stop.json?stopId=BKK_"
+}
 
 //funkció létrehozása
 const select = function(pos, id, name){
@@ -21,7 +27,7 @@ const select = function(pos, id, name){
 
 	//Kérés a bkk szerveréhez
 	try{
-		fetch("http://futar.bkk.hu/bkk-utvonaltervezo-api/ws/otp/api/where/arrivals-and-departures-for-stop.json?stopId=BKK_" + id, {method: "GET", mode: 'cors'})
+		fetch(link + id, {method: "GET", mode: 'cors'})
 		//várás az api válaszára, majd ha megjött kódolás átalakítása
 		.then(res => res.json())
 		.then(stop => {
