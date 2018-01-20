@@ -27,3 +27,9 @@ Css @media selector
 - Html alapok
 - Css haladóbb
 - Javascript nincs
+4. [Random felhasználó](https://mormota.github.io/LetsCode-projects/random-felhasznalo/)
+Apikérés
+>A randomuser apiját felhasznáva készült, semmi interakciót nem tartalmazó, direkt kezdőknek kitalált, az api kérést bemutató project
+- Html alapok
+- Css positionök bemutatása
+- Javascript haladóbb (api kérések, async function-ök)
