@@ -21,3 +21,9 @@ Apikérése
 * Külső funkciók használata
 * Külső apik használata
 * Objectek szabad kezelés
+3. [Lovaglásról](https://mormota.github.io/LetsCode-projects/lovaglasrol/)
+Css @media selector
+> Egy teljesen responsive, teljes képernyőt kitöltő landing page
+- Html alapok
+- Css haladóbb
+- Javascript nincs
