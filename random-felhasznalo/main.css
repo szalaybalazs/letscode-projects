@@ -44,9 +44,20 @@ div.data > div:hover{
 	color: rgb(143, 183, 55);
 }
 div.user > footer{
-	margin-top: 20px;
+	margin-top: 5px;
 	height: 40px;
 	text-align: center;
 	background-color: rgb(143, 183, 55);
 	line-height: 40px;
+}
+button {
+	width: 60%;
+	display: block;
+	margin: auto;
+	border-radius: 0;
+	background-color: rgb(143, 183, 55);
+	color: white;
+	font-size: 18px;
+	margin-top: 15px;
+	border: none;
 }
