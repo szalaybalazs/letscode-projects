@@ -31,5 +31,11 @@ Css @media selector
 Apikérés
 >A randomuser apiját felhasznáva készült, semmi interakciót nem tartalmazó, direkt kezdőknek kitalált, az api kérést bemutató project
 - Html alapok
-- Css positionök bemutatása
+- Css position-ok bemutatása
 - Javascript haladóbb (api kérések, async function-ök)
+5. [Todo app](https://mormota.github.io/LetsCode-projects/todo-app/)
+Egy feladat napló
+>Iváncsics Márkus által készített, pure javascriptet és localstorage-ot használó feladatnapló
+- Html alapok
+- Css flexbox alapok
+- Javascript localstorage
