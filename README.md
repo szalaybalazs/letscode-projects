@@ -39,3 +39,9 @@ Egy feladat napló
 - Html alapok
 - Css flexbox alapok
 - Javascript localstorage
+
+6. [Hello World](https://mormota.github.io/LetsCode-projects/hello-world/)
+Modern styling használat
+>Egy London alapadataival rendelkező modern megjelítésű kártya
+- Html alapok
+- Css positioning, overflow, filter
