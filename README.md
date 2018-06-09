@@ -3,7 +3,7 @@ A [Let's Code!](https://lets-code.hu)-on használt okatató jelelgű weboldalak.
 ## Jelenlegi oldalaink:
 1. [Fuss a csúcsra eredményjelző](https://mormota.github.io/LetsCode-projects/fuss-a-csucsra-2013-eredmenyek/)
 A webfejlesztés alapjai
-> Egy kezdőknek kitalált, a 2013-as fuss a csúcsra eredményeit megjelenítő, és azt dinamikusan kezelő weboldal. 
+> Egy, a 2013-as fuss a csúcsra eredményeit megjelenítő, és azt dinamikusan kezelő weboldal. 
 > 
  - Html alap komponensek
  - List item
