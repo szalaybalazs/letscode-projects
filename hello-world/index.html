@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Heló világ!</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+			html{
+				font-family: 'Roboto', sans-serif;
+				background-color: rgb(87,	168,	206);
+			}
+			div.container{
+				background-color: white;
+				width: 720px;
+				height: 450px;
+				margin: auto;
+				margin-top: 10vh;
+				padding: 40px;
+				position: relative;
+			}
+			header{
+
+			}
+			img{
+				height: 240px;
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+				filter: grayscale(1);
+			}
+			h1{
+				position: absolute;
+				font-size: 120px;
+				color: rgba(94,	168, 206, .9);
+				right: 60px;
+				top: 70px;
+			}
+			img.uk{
+				top: 40px;
+				right: 40px;
+				left: initial;
+				height: 160px;
+			}
+			div.data{
+				position: absolute;
+				left: 480px;
+				bottom: 40px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			p:last-of-type{
+				margin-bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h2>London</h2>
+				<h3>- Egyesült Királyság</h3>
+			</header>
+			<main>
+				<img height="160" class='uk' src="./images/uk.png" alt="">
+				<img height="320" src="./images/london.jpg" alt="">
+				<h1>Hello</h1>
+				<div class="data">
+					<p>
+						8,673,713 <br />
+						Lakosság
+					</p>
+					<p>
+						<span>8,382 km<sup>2</sup></span><br>
+						<span>(3,296 sq mi)</span><br>
+						<span>Terület</span>
+					</p>
+					
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

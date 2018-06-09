@@ -21,7 +21,7 @@ if(window.location.href.split("//")[0] === "https:"){
 }
 
 //funkció létrehozása
-const select = function(pos, id, name){
+const select = (pos, id, name) => {
 	//újrapozicionálja a térképet
 	map(pos)
 
@@ -106,6 +106,7 @@ const back = function(){
 	header.innerHTML = filters + "<div id='stops'>" + list + "</div>"
 	//overlay eltűntetése
 	overlay.className = "overlay"
+
 
 }
 

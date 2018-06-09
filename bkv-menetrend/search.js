@@ -1,5 +1,6 @@
 //Funkció elkészítése
 const search = function(){
+	console.log('searching')
 	//az eddigi találatok törlése
   	foundcontainer.innerHTML = ""
   	list = ""
@@ -15,6 +16,7 @@ const search = function(){
 		//tesztelem, hogy az addot megálló megfelel-e a keresési feltételeknek
 		if(stop.name.toLowerCase().includes(value)){
 			//ha igen, beküldöm a találatok közé
+			console.log('includes')
 			filtered.push(stop)
 		}
 	}
@@ -37,6 +39,7 @@ const search = function(){
 	//ha kész a lista, kiírom a html-be
 	foundcontainer.innerHTML = list
 	//Ha nincs talált megálló
+	header.innerHTML = filters + "<div id='stops'>" + list + "</div>"
 	if(filtered.length === 0)
 		//Kiírom, hogy nem talált semmit
 		foundcontainer.innerHTML = "<div class='item notfound'>Nincs a keresésnek megfelelő megálló</div>"
