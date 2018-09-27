@@ -1,0 +1,46 @@
+.container
+  position: absolute
+  left: 50%
+  top: 50%
+  width: 600px
+  height: 600px
+  transform: translate(-50%, -50%)
+  filter: url('#filter')
+
+.container div 
+  background-color: rgb(88, 173, 0)
+  
+.circle 
+  width: 240px
+  height: 240px
+  border-radius: 50%
+  position: absolute
+  margin: auto
+  top: -1000000px
+  bottom: -1000000px
+  left: -1000000px
+  right: -1000000px
+
+@for $i from 1 through 23
+  $scale: random()
+  $rotate: random() - 1
+  .container .dots:nth-child(#{$i}) 
+    background-color: rgb(88, 173, 0)
+    width: 50px
+    height: 50px
+    transform: scale($scale + 2)
+    border-radius: 50%
+    position: absolute
+    margin: auto
+    top: -1000000px
+    bottom: -1000000px
+    left: -1000000px
+    right: -1000000px
+    //nimation: name duration timing-function delay iteration-count direction fill-mode play-state;
+    animation: anim-#{$i} 5s calc(#{$scale} * 5s) infinite ease-in-out
+
+    @keyframes anim-#{$i} 
+      0% 
+        transform: rotate($rotate * 360deg) translate(0px) rotate($rotate * -360deg) scale($scale + 3)
+      100% 
+        transform: rotate($rotate * 360deg) translate(round(random() * 250px)) rotate($rotate * -360deg) scale(0)

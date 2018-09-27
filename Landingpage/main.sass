@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+$font: 'Roboto', sans-serif
+$shadow: 0 0 6px 6px rgba(0, 0, 0, 0.01), 0 0 3px 3px rgba(0, 0, 0, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.1)
+$hoverShadow: 0 12px 18px 18px rgba(0, 0, 0, 0.01), 0 6px 9px 9px rgba(0, 0, 0, 0.05), 0 2px 3px 3px rgba(0, 0, 0, 0.1)
+$blue: rgb(42, 192, 240)
+html
+  margin: 0
+  padding: 0
+  font-family: $font
+  background-color: $blue
+  body
+    width: 60%
+    background-color: white
+    margin: auto
+    margin-top: 60px
+    box-shadow: $shadow
+    padding: 30px 12px 12px 12px
+    margin-bottom: 32px
+    header
+      position: fixed
+      background-color: white
+      width: fit-content
+      left: 50%
+      transform: translate(-50%, -50%)
+      top: 60px
+      padding: 18px 24px
+      box-shadow: $shadow
+      a
+        color: rgba(black, 0.85)
+        margin: 0 24px
+        font-size: 16px
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+    div.content
+      div.section1
+        background-color: white
+        padding-top: 20px
+        section.images
+          display: grid
+          grid-template-columns: repeat(3, 1fr)
+          margin-bottom: 120px
+          div
+            text-align: center
+            div.image
+              background-color: white
+              height: 60px
+              width: 60px
+              margin: auto
+              border-radius: 8px
+              border: 2px solid $blue
+              margin-bottom: 40px
+            h2
+              font-size: 18px
+              color: rgba(black, 0.75)
+            div
+              color: rgba(black, 0.5)
+              font-size: 16px
+      div.section2
+        background-color: rgba(0, 0, 0, .05)
+        margin: -12px
+        padding: 24px
+        padding-top: 2px
+        section.filters
+          width: fit-content
+          margin: auto
+          div
+            display: inline-block
+            padding: 12px
+            background-color: white
+            cursor: pointer
+            margin: 4px
+            transition: 250ms
+            &:hover
+              background-color: $blue
+              color: white
+        div.grid
+          width: 80%
+          margin: auto
+          margin-top: 60px
+          display: grid
+          grid-template-columns: repeat(3, 1fr)
+          grid-gap: 20px
+          div:not(.image):not(.description)
+            height: 16vw
+            background-color: white
+            box-shadow: $shadow
+            transition: 250ms
+            cursor: pointer
+            &:hover
+              box-shadow: $hoverShadow
+            @for $i from 1 through 6
+              &:nth-of-type(#{$i})
+                div.image
+                  background-image: url(./images/image_#{$i}.jpg)
+            div.image
+              height: #{100% / 3 * 2}
+              background-size: cover
+              background-position: center
+            h2
+              font-size: 14px
+              color: black
+              line-height: 20px
+              text-align: center
+            div.description
+              font-size: 12px
+              color: rgba(black, 0.75)
+              text-align: center
+              margin: auto
+
+section.title
+          width: 40%
+          margin: auto
+          margin-top: 80px
+          margin-bottom: 80px
+          h1
+            color: black
+            font-size: 20px
+            text-align: center
+            font-weight: lighter
+          div
+            color: rgba(black, 0.5)
+            text-align: center
