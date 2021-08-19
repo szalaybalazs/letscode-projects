@@ -35,7 +35,7 @@ Apikérés
 - Javascript haladóbb (api kérések, async function-ök)
 5. [Todo app](https://szalaybalazs.github.io/LetsCode-projects/todo-app/)
 Egy feladat napló
->Iváncsics Márkus által készített, pure javascriptet és localstorage-ot használó feladatnapló
+>Pure javascriptet és localstorage-ot használó feladatnapló
 - Html alapok
 - Css flexbox alapok
 - Javascript localstorage
